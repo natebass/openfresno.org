@@ -5,7 +5,7 @@ website. Help us make the site better by [forking it](https://help.github.com/ar
 or features, and [submitting a pull request](https://help.github.com/articles/creating-a-pull-request/)!
 
 > [!NOTE]
-> View the documentation to lean more about the project. ([Website](https://openfresno.github.io/fe-openfresno.org-doc)) ([GitHub](https://github.com/openfresno/fe-openfresno.org-doc)).
+> View the documentation. ([Website](https://openfresno.github.io/fe-openfresno.org-doc)) ([GitHub](https://github.com/openfresno/fe-openfresno.org-doc)).
 
 ## Get started
 
