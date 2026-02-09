@@ -32,7 +32,10 @@ export default function DonateSectionLanding({
         in Central California. Thank you for your generous support!
       </GeneralSection>
       <PageContainer sectionType={sectionType} divClassName={"items-center"}>
-        <Button className="btn btn--grow" href="https://givebutter.com/openfresno">
+        <Button
+          className="btn btn--grow"
+          href="https://givebutter.com/openfresno"
+        >
           Donate Now
         </Button>
       </PageContainer>
