@@ -7,7 +7,6 @@ const basePath = getBasePath(true);
 const nextConfig = {
   output: "export",
   basePath,
-  assetPrefix: basePath,
   images: {
     unoptimized: true,
   },
@@ -15,8 +14,6 @@ const nextConfig = {
   reactCompiler: true,
 };
 
-const withMDX = createMDX({
-  extension: /\.(md|mdx)$/,
-});
+const withMDX = createMDX();
 
 export default withMDX(nextConfig);
