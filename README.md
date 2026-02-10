@@ -16,12 +16,12 @@ This is a Next.js static site. Get started by downloading the code and running t
 
 ## Contribute
 
-- [Help wanted](https://github.com/openfresno/openfresno.org/issues)
+- See our projects at https://openfresno.org/projects.
 - Come to our virtual [Open Fresno's Hack Night](https://www.meetup.com/openfresno/).
 
 ## Test
 
-Add critical end-to-end tests to the [tests/](/tests) folder. All other tests should be in the [documentation repository](https://github.com/openfresno/fe-openfresno.org-doc).
+Add critical end-to-end tests in the [tests/](/tests) folder. All other tests should be in the [documentation repository](https://github.com/openfresno/fe-openfresno.org-doc).
 
 ## Deploy
 
