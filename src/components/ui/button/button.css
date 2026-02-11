@@ -143,11 +143,11 @@
 }
 
 .navbar-extended-toggle-button {
-  color: var(--main-vivid-blue);
   display: flex;
   align-items: center;
-  padding: 1rem;
   cursor: pointer;
+  padding: 1rem;
+  color: var(--main-vivid-blue);
 }
 
 /* Deprecated */

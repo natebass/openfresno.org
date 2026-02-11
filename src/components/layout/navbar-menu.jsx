@@ -129,7 +129,7 @@ export default function NavbarMenu({ className = "" }) {
             <h4 className="navbar-extended-header h4-semi-bold">
               {section.title}
             </h4>
-            <p className="grow p1-regular">{section.description}</p>
+            <p className="p1-regular grow">{section.description}</p>
             <Button href={section.href} className="btn-small">
               {section.buttonText}
             </Button>
@@ -137,7 +137,7 @@ export default function NavbarMenu({ className = "" }) {
         ))}
 
         {/* Quick Links */}
-        <section className="navbar-extended-quick-links p3-regular [@media(min-width:1400px)]:space-y-8 gap-4 self-center [@media(min-width:992px)_and_(max-width:1400px)]:flex">
+        <section className="navbar-extended-quick-links p3-regular gap-4 self-center [@media(min-width:1400px)]:space-y-8 [@media(min-width:992px)_and_(max-width:1400px)]:flex">
           <p>
             Join us for our weekly meetings on{" "}
             <Link

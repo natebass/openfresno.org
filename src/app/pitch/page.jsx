@@ -41,7 +41,7 @@ export default function PitchPage() {
         </div>
         <Steps sectionType={SectionType.light} steps={instructionData}></Steps>
       </SidebarSection>
-      <hr className="mx-auto h-px max-w-(--screen-xxl) border-0 bg-(--neutral-400) mt-18 " />
+      <hr className="mx-auto mt-18 h-px max-w-(--screen-xxl) border-0 bg-(--neutral-400)" />
     </Layout>
   );
 }

@@ -1,5 +1,3 @@
-import dynamic from "next/dynamic";
-const Slider = dynamic(() => import("../../components/Slider"));
 import Layout from "../../components/layout/layout";
 import Button from "../../components/ui/button/Button";
 import Timeline from "../../components/ui/timeline/Timeline";
@@ -13,8 +11,11 @@ import rootAccess from "@/../public/img/partnership-icons/root-access-white-tran
 import GeneralSection from "@/components/ui/GeneralSection";
 import ImageSection from "@/components/ui/ImageSection";
 import { SectionType } from "@/utility/constants/theme";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+
+const Slider = dynamic(() => import("../../components/Slider"));
 
 /**
  * Open Fresno's Home page

@@ -1,7 +1,7 @@
+import Button from "../../components/ui/button/Button";
 import GeneralSection from "@/components/ui/GeneralSection";
 import PageContainer from "@/components/ui/PageContainer";
 import { SectionType } from "@/utility/constants/theme";
-import Button from "../../components/ui/button/Button";
 
 /**
  * The landing section for donations.

@@ -9,13 +9,13 @@
 @layer navbar-menu {
   /* ===== Container ===== */
   .navbar-extended-container {
-    overflow-y: auto;
-    max-height: calc(100dvh - var(--navbar-height));
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
     border-top: 1px solid #ebeae5;
     background: var(--secondary-50);
     padding: 0.5rem 0 0.75rem;
     width: 100%;
+    max-height: calc(100dvh - var(--navbar-height));
+    overflow-y: auto;
   }
 
   /* ===== Mobile Navigation ===== */
