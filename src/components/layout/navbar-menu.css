@@ -20,15 +20,10 @@
 
   /* ===== Mobile Navigation ===== */
   .navbar-extended-mobile-container {
+    display: none;
     gap: 0.5rem;
     margin: auto;
     padding-inline: 0.5rem;
-
-    @media (min-width: 992px) {
-      display: none;
-    }
-
-    /* Link styles */
 
     a {
       display: block;
@@ -44,6 +39,16 @@
         outline-offset: 2px;
         border-radius: 4px;
       }
+    }
+  }
+
+  /* Show the active panel based on the container's data-nav attribute */
+  .navbar-extended-container[data-nav="primary"] [data-panel="primary"],
+  .navbar-extended-container[data-nav="secondary"] [data-panel="secondary"] {
+    display: grid;
+
+    @media (min-width: 992px) {
+      display: none;
     }
   }
 

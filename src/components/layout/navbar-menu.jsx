@@ -45,6 +45,9 @@ const DESKTOP_SECTIONS = [
   },
 ];
 
+// Persists across mount/unmount so the menu remembers its last position.
+let lastNav = "primary";
+
 /**
  * Extended navbar menu below the main navigation bar.
  * - **Mobile view**: Toggles between two distinct navigation menus.
@@ -54,17 +57,25 @@ const DESKTOP_SECTIONS = [
  * @returns {JSX.Element}
  */
 export default function NavbarMenu({ className = "" }) {
-  const [showSecondaryNav, setShowSecondaryNav] = useState(false);
+  const [nav, setNav] = useState(lastNav);
+
+  const toggleNav = (showSecondary) => {
+    const next = showSecondary ? "secondary" : "primary";
+    lastNav = next;
+    setNav(next);
+  };
 
   return (
     <div
       className={`navbar-extended-container p2-regular ${className}`}
+      data-nav={nav}
       role="region"
       aria-label="Extended navigation"
     >
       {/* Mobile Navigation - Primary */}
       <ul
-        className={`navbar-extended-mobile-container nav-semi-bold ${showSecondaryNav ? "hidden" : "grid"}`}
+        className="navbar-extended-mobile-container nav-semi-bold"
+        data-panel="primary"
         role="menu"
         aria-label="Primary navigation"
       >
@@ -76,14 +87,15 @@ export default function NavbarMenu({ className = "" }) {
           </li>
         ))}
         <NavExtendedToggle
-          mobileNavPosition={showSecondaryNav}
-          toggleMobileNavPosition={setShowSecondaryNav}
+          mobileNavPosition={nav === "secondary"}
+          toggleMobileNavPosition={toggleNav}
         />
       </ul>
 
       {/* Mobile Navigation - Secondary */}
       <ul
-        className={`navbar-extended-mobile-container nav-semi-bold ${showSecondaryNav ? "grid" : "hidden"}`}
+        className="navbar-extended-mobile-container nav-semi-bold"
+        data-panel="secondary"
         role="menu"
         aria-label="Secondary navigation"
       >
@@ -102,8 +114,8 @@ export default function NavbarMenu({ className = "" }) {
           </li>
         ))}
         <NavExtendedToggle
-          mobileNavPosition={showSecondaryNav}
-          toggleMobileNavPosition={setShowSecondaryNav}
+          mobileNavPosition={nav === "secondary"}
+          toggleMobileNavPosition={toggleNav}
         />
       </ul>
 
