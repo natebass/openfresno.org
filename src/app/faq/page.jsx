@@ -50,10 +50,8 @@ export default function FaqPage() {
           need and embark on a journey of civic engagement, innovation, and
           community empowerment.
         </GeneralSection>
-        <section className={`faq-container app-color--primary px-6 py-6`}>
-          <nav
-            className={`mx-auto flex max-w-[calc(var(--screen-xxl)+80px)] flex-col max-lg:gap-4 lg:flex-row lg:justify-between`}
-          >
+        <section className="faq-nav app-color--primary py-6">
+          <nav className="page-container flex flex-col max-lg:gap-4 lg:flex-row lg:justify-between">
             {tableOfContents.map((item) => (
               <Link
                 key={item.slug}
@@ -65,7 +63,7 @@ export default function FaqPage() {
             ))}
           </nav>
         </section>
-        <section className="faq-container-margins py-t mx-auto flex max-w-[calc(var(--screen-xxl)+80px)] flex-col gap-0 px-6 lg:pt-12 lg:pb-17">
+        <section className="mx-auto max-w-[calc(var(--screen-xxl)+80px)] px-6 lg:px-10 pt-12 pb-16">
           <MDXRemote source={fileContent} components={MDXComponents} />
         </section>
         <hr className="mx-auto h-px max-w-(--screen-xxl) border-0 bg-(--neutral-400)" />
