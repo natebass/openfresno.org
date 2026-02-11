@@ -1,10 +1,10 @@
 import Faq from "./faq";
-import LayoutE53 from "@/components/layout/LayoutE53";
+import Layout from "@/components/layout/layout";
 
 export default function FaqPage() {
   return (
-    <LayoutE53>
+    <Layout>
       <Faq />
-    </LayoutE53>
+    </Layout>
   );
 }

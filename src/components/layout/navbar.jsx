@@ -1,7 +1,7 @@
 "use client";
 
 import { NavToggle } from "../ui/button/Button";
-import NavbarMenuE87 from "./NavbarMenuE87";
+import NavbarMenu from "./navbar-menu";
 import { LogoTextBlack } from "@/components/ui/icon/logo-text-black";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -22,7 +22,7 @@ const NAV_LINKS = [
  * @param {boolean} fade - Whether to enable fade effect on scroll
  * @returns {JSX.Element}
  */
-export default function NavbarE7e({ fade = false }) {
+export default function Navbar({ fade = false }) {
   const [menuPathname, setMenuPathname] = useState(null);
   const pathname = usePathname();
   const navbarRef = useRef(null);
@@ -112,7 +112,7 @@ export default function NavbarE7e({ fade = false }) {
       </div>
 
       {/* Extended Menu */}
-      {extendedMenuVisible && <NavbarMenuE87 />}
+      {extendedMenuVisible && <NavbarMenu />}
     </nav>
   );
 }

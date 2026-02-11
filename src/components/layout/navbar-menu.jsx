@@ -53,7 +53,7 @@ const DESKTOP_SECTIONS = [
  * @param {string} className - Optional additional CSS class names
  * @returns {JSX.Element}
  */
-export default function NavbarMenuE87({ className = "" }) {
+export default function NavbarMenu({ className = "" }) {
   const [showSecondaryNav, setShowSecondaryNav] = useState(false);
 
   return (

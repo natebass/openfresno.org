@@ -1,7 +1,7 @@
 import HeaderUnderline from "../../components/ui/HeaderUnderline";
 import Steps from "../../components/ui/steps/Steps";
 import instructionData from "./instructions.jsx";
-import LayoutE53 from "@/components/layout/LayoutE53";
+import Layout from "@/components/layout/layout";
 import GeneralSection from "@/components/ui/GeneralSection";
 import SidebarSection from "@/components/ui/steps/SidebarSection";
 import { SectionType } from "@/utility/constants/theme";
@@ -12,7 +12,7 @@ import { SectionType } from "@/utility/constants/theme";
  */
 export default function PitchPage() {
   return (
-    <LayoutE53>
+    <Layout>
       <GeneralSection
         heading="Pitch a project"
         subHeading={
@@ -42,6 +42,6 @@ export default function PitchPage() {
         <Steps sectionType={SectionType.light} steps={instructionData}></Steps>
       </SidebarSection>
       <hr className="mx-auto h-px max-w-(--screen-xxl) border-0 bg-(--neutral-400) mt-18 " />
-    </LayoutE53>
+    </Layout>
   );
 }

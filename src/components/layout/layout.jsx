@@ -1,5 +1,5 @@
-import FooterE4d from "./FooterE4d";
-import NavbarE7e from "./NavbarE7e";
+import Footer from "./footer";
+import Navbar from "./navbar";
 
 /**
  * The default layout for the application. It includes a navbar and footer.
@@ -10,17 +10,12 @@ import NavbarE7e from "./NavbarE7e";
  <main></main>
  <AppLayout />
  */
-export default function LayoutE53({
-  children,
-  fadeNavbar = false,
-}) {
+export default function Layout({ children, fadeNavbar = false }) {
   return (
     <>
-      <NavbarE7e fade={fadeNavbar} />
-      <div className="toolbar-after-content">
-        {children}
-      </div>
-      <FooterE4d />
+      <Navbar fade={fadeNavbar} />
+      <div className="toolbar-after-content">{children}</div>
+      <Footer />
     </>
   );
 }

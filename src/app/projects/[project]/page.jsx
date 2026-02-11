@@ -1,5 +1,5 @@
 import SingleProject from "./singleProject";
-import LayoutE53 from "@/components/layout/LayoutE53";
+import Layout from "@/components/layout/layout";
 import { githubOwner } from "@/utility/constants/app-data";
 import { SectionType } from "@/utility/constants/theme";
 
@@ -28,11 +28,11 @@ export async function generateStaticParams() {
 
 export default async function Page({ params }) {
   return (
-    <LayoutE53>
+    <Layout>
       <SingleProject
         githubFullName={`${githubOwner}/${(await params).project}`}
         sectionType={SectionType.light}
       ></SingleProject>
-    </LayoutE53>
+    </Layout>
   );
 }

@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 const Slider = dynamic(() => import("../../components/Slider"));
-import LayoutE53 from "../../components/layout/LayoutE53";
+import Layout from "../../components/layout/layout";
 import Button from "../../components/ui/button/Button";
 import Timeline from "../../components/ui/timeline/Timeline";
 import logoBlue from "@/../public/assets/logo/logo-blue.svg";
@@ -22,7 +22,7 @@ import Link from "next/link";
  */
 export default function HomePage() {
   return (
-    <LayoutE53 fadeNavbar={true}>
+    <Layout fadeNavbar={true}>
       <main>
         <header className="home-landing-container">
           <div className="space-y-10">
@@ -271,6 +271,6 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-    </LayoutE53>
+    </Layout>
   );
 }
