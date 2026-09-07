@@ -1,0 +1,53 @@
+import HeaderUnderline from "../../../components/ui/header-underline.jsx";
+import SidebarSection from "../../../components/ui/steps/sidebar-section.jsx";
+import Steps from "../../../components/ui/steps/steps.jsx";
+import instructionData from "./instructions.jsx";
+import GeneralSection from "@/components/general-section.jsx";
+import { SectionType } from "@/utility/constants/theme.js";
+
+/**
+ * Get started page.
+ */
+export default function GetStartedPage() {
+  return (
+    <>
+      <GeneralSection
+        sectionType={SectionType.light}
+        heading="Get started"
+        subHeading={
+          <>
+            Ready to Volunteer with
+            <br />
+            Open Fresno
+          </>
+        }
+      >
+        We&apos;re thrilled that you&apos;re eager to join our community of civic-minded individuals
+        and make a positive impact in Central California. Volunteering with Open Fresno is a
+        rewarding experience that allows you to use your skills for the betterment of our city.{" "}
+        <span className={`paragraph-bold`}>
+          Whether you&apos;re a designer, developer, or anyone else passionate about civic tech,
+        </span>{" "}
+        you&apos;ll find step-by-step instructions below to help you get started on your journey of
+        civic tech and community empowerment.
+      </GeneralSection>
+      <hr className="mx-auto mb-18 h-px max-w-(--screen-xxl) border-0 bg-(--neutral-400)" />
+      <SidebarSection sectionType={SectionType.light}>
+        <div className="flex flex-col gap-6">
+          <HeaderUnderline
+            className={"split-section-content-container"}
+            sectionType={SectionType.light}
+            title="Getting started"
+            description="Steps to Volunteer"
+          >
+            Discover how you can become a valued volunteer at Open Fresno. Follow these simple steps
+            to join our community of technologists, developers, and civic-minded individuals
+            dedicated to driving positive change through technology and collaboration.
+          </HeaderUnderline>
+        </div>
+        <Steps sectionType={SectionType.light} steps={instructionData} />
+      </SidebarSection>
+      <hr className="mx-auto mt-18 h-px max-w-(--screen-xxl) border-0 bg-(--neutral-400)" />
+    </>
+  );
+}

@@ -672,3 +672,4 @@ next-env.d.ts
 /playwright/.auth/
 
 .claude
+/.output.txt

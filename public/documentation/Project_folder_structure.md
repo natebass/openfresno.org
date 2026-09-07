@@ -36,8 +36,8 @@
 - [`not-found`](https://nextjs.org/docs/app/api-reference/file-conventions/not-found) **(`.js` `.jsx` `.tsx`)** - Not
   found UI
 - [`error`](https://nextjs.org/docs/app/api-reference/file-conventions/error) **(`.js` `.jsx` `.tsx`)** - Error UI
-- [`global-error`](https://nextjs.org/docs/app/api-reference/file-conventions/error#global-errorjs) \*
-  \*(`.js` `.jsx` `.tsx`)\*\* - Global error UI
+- [`global-error`](https://nextjs.org/docs/app/api-reference/file-conventions/error#global-errorjs) \* \* (`.js` `.jsx`
+  `.tsx`)\*\* - Global error UI
 - [`route`](https://nextjs.org/docs/app/api-reference/file-conventions/route) **(`.js` `.ts`)** - API endpoint
 - [`template`](https://nextjs.org/docs/app/api-reference/file-conventions/template) **(`.js` `.jsx` `.tsx`)** -
   Re-rendered layout
@@ -142,15 +142,15 @@
 
 #### Folder convention
 
-- [`index`](https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts#index-routes) \*
-  \*(`.js` `.jsx` `.tsx`)\*\* - Home page
-- [`folder/index`](https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts#index-routes) \*
-  \*(`.js` `.jsx` `.tsx`)\*\* - Nested page
+- [`index`](https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts#index-routes) \* \* (`.js`
+  `.jsx` `.tsx`)\*\* - Home page
+- [`folder/index`](https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts#index-routes) \* \*
+  (`.js` `.jsx` `.tsx`)\*\* - Nested page
 
 #### File convention
 
-- [`index`](https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts#index-routes) \*
-  \*(`.js` `.jsx` `.tsx`)\*\* - Home page
+- [`index`](https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts#index-routes) \* \* (`.js`
+  `.jsx` `.tsx`)\*\* - Home page
 - [`file`](https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts) **(`.js` `.jsx` `.tsx`)
   ** - Nested page
 
@@ -158,8 +158,8 @@
 
 #### Folder convention
 
-- [`[folder]/index`](https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes) \*
-  \*(`.js` `.jsx` `.tsx`)\*\* - Dynamic route segment
+- [`[folder]/index`](https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes) \* \* (`.js` `.jsx`
+  `.tsx`)\*\* - Dynamic route segment
 - [
   `[...folder]/index`](https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes#catch-all-segments)
   **(`.js` `.jsx` `.tsx`)** - Catch-all route segment
@@ -171,8 +171,8 @@
 
 - [`[file]`](https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes) **(`.js` `.jsx` `.tsx`)** -
   Dynamic route segment
-- [`[...file]`](https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes#catch-all-segments) \*
-  \*(`.js` `.jsx` `.tsx`)\*\* - Catch-all route segment
+- [`[...file]`](https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes#catch-all-segments) \* \*
+  (`.js` `.jsx` `.tsx`)\*\* - Catch-all route segment
 - [
   `[[...file]]`](https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes#optional-catch-all-segments)
   **(`.js` `.jsx` `.tsx`)** - Optional catch-all route segment

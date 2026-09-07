@@ -16,11 +16,11 @@ the [app](/src/app/) folder.
 - Mobile
   - Collapsed
   - Expanded
-    - [Expanded Menu 1](/public/img/documentation/Mobile%20Navbar%20-%20Menu%201.png)
-    - [Expanded Menu 2](/public/img/documentation/MN%20Expanded%20Menu%201%20and%202.png)
+    - [Expanded Menu 1](/src/assets/img/documentation/Mobile%20Navbar%20-%20Menu%201.png)
+    - [Expanded Menu 2](/src/assets/img/documentation/MN%20Expanded%20Menu%201%20and%202.png)
 - Desktop
-  - [Collapsed](/public/img/documentation/Navbar.png)
-  - [Expanded](/public/img/documentation/Navbar%20Expanded.png)
+  - [Collapsed](/src/assets/img/documentation/Navbar.png)
+  - [Expanded](/src/assets/img/documentation/Navbar%20Expanded.png)
 
 ## Application Footer
 
